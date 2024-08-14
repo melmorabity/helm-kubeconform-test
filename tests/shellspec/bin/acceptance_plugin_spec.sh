@@ -10,7 +10,7 @@ OCP_CHART_LOCATION=$PWD/tests/fixtures/chart-ocp
 OCP_SCHEMA_URL="https://raw.githubusercontent.com/melmorabity/openshift-json-schemas/main/v4.14-standalone{{ .StrictSuffix }}/{{ .ResourceKind }}.json"
 VALID_CHART_VALUES=$PWD/tests/fixtures/good_values.yaml
 INVALID_CHART_VALUES=$PWD/tests/fixtures/bad_values.yaml
-KUBECONFORM_BIN=$HELM_PLUGINS/helm-kubeconform/kubeconform
+KUBECONFORM_BIN=$HELM_PLUGINS/helm-kubeconform-test/kubeconform
 
 if command -v cygpath >/dev/null; then
     HELM_BIN=$(cygpath -w "$HELM_BIN")
